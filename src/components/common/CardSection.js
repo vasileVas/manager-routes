@@ -12,5 +12,7 @@ const cardSectionStyle = {
 };
 
 export const CardSection = props => (
-    <View style={cardSectionStyle}>{props.children}</View>
+    <View style={{ ...cardSectionStyle, ...props.style }}>
+        {props.children}
+    </View>
 );
